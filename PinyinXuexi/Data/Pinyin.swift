@@ -40,3 +40,27 @@ enum Pinyin {
     }
     
 }
+
+extension Pinyin.Final.Tone {
+    
+    var individualDisplay: String {
+        switch self {
+        case .high:     return "ˉ"
+        case .rising:   return "ˊ"
+        case .low:      return "ˇ"
+        case .falling:  return "ˋ"
+        case .neutral:  return ""
+        }
+    }
+    
+    var combinationDisplay: String {
+        switch self {
+        case .high:     return "\u{0304}"
+        case .rising:   return "\u{0301}"
+        case .low:      return "\u{030c}"
+        case .falling:  return "\u{0300}"
+        case .neutral:  return ""
+        }
+    }
+    
+}
