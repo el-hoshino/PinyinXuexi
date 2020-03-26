@@ -16,6 +16,7 @@
 		BF6E9B97242BE0D100A67091 /* PinyinXuexiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6E9B96242BE0D100A67091 /* PinyinXuexiTests.swift */; };
 		BF6E9BA2242BE0D100A67091 /* PinyinXuexiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6E9BA1242BE0D100A67091 /* PinyinXuexiUITests.swift */; };
 		BF94ECF5242D1F44007DEBFC /* Pinyin.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF94ECF4242D1F44007DEBFC /* Pinyin.swift */; };
+		BF94ECF9242D2B09007DEBFC /* PinyinTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF94ECF8242D2B09007DEBFC /* PinyinTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		BF6E9BA1242BE0D100A67091 /* PinyinXuexiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinyinXuexiUITests.swift; sourceTree = "<group>"; };
 		BF6E9BA3242BE0D100A67091 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BF94ECF4242D1F44007DEBFC /* Pinyin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pinyin.swift; sourceTree = "<group>"; };
+		BF94ECF8242D2B09007DEBFC /* PinyinTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinyinTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +126,7 @@
 		BF6E9B95242BE0D100A67091 /* PinyinXuexiTests */ = {
 			isa = PBXGroup;
 			children = (
+				BF94ECF7242D2AF1007DEBFC /* Data */,
 				BF6E9B96242BE0D100A67091 /* PinyinXuexiTests.swift */,
 				BF6E9B98242BE0D100A67091 /* Info.plist */,
 			);
@@ -143,6 +146,14 @@
 			isa = PBXGroup;
 			children = (
 				BF94ECF4242D1F44007DEBFC /* Pinyin.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		BF94ECF7242D2AF1007DEBFC /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				BF94ECF8242D2B09007DEBFC /* PinyinTests.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -289,6 +300,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF94ECF9242D2B09007DEBFC /* PinyinTests.swift in Sources */,
 				BF6E9B97242BE0D100A67091 /* PinyinXuexiTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
