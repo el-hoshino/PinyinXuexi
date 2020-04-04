@@ -13,7 +13,7 @@ class PinyinTests: XCTestCase {
 
     func testToneDisplay() {
         
-        let allTones = Pinyin.Final.Tone.allCases
+        let allTones = Pinyin.Tone.allCases
         
         XCTContext.runActivity(named: "Individual Display") { _ in
             for tone in allTones {
@@ -47,7 +47,7 @@ class PinyinTests: XCTestCase {
 
 }
 
-private extension Pinyin.Final.Tone {
+private extension Pinyin.Tone {
     
     var individual: String {
         switch self {

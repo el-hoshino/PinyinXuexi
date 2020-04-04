@@ -17,14 +17,6 @@ enum Pinyin {
     
     enum Final: CaseIterable {
         
-        enum Tone: CaseIterable {
-            case high // ˉ
-            case rising // ˊ
-            case low // ˇ
-            case falling // ˋ
-            case neutral // no
-        }
-        
         case a, o, e, i, u, ü
         case ai, ei, ui, ao, ou, iu, ie, üe, er
         case an, en, `in`, un, ün
@@ -32,16 +24,20 @@ enum Pinyin {
         
     }
     
-    case initial(Initial)
-    case final(Final, Final.Tone?)
-    
-    static func final(_ final: Final) -> Pinyin {
-        return .final(final, nil)
+    enum Tone: CaseIterable {
+        case high // ˉ
+        case rising // ˊ
+        case low // ˇ
+        case falling // ˋ
+        case neutral // no
     }
+    
+    case initial(Initial)
+    case final(Final)
     
 }
 
-extension Pinyin.Final.Tone {
+extension Pinyin.Tone {
     
     var individualDisplay: String {
         switch self {
