@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		BF6E9B80242BE0CE00A67091 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6E9B7F242BE0CE00A67091 /* AppDelegate.swift */; };
 		BF6E9B82242BE0CE00A67091 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6E9B81242BE0CE00A67091 /* SceneDelegate.swift */; };
-		BF6E9B84242BE0CE00A67091 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6E9B83242BE0CE00A67091 /* ContentView.swift */; };
+		BF6E9B84242BE0CE00A67091 /* PinyinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6E9B83242BE0CE00A67091 /* PinyinView.swift */; };
 		BF6E9B86242BE0D100A67091 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF6E9B85242BE0D100A67091 /* Assets.xcassets */; };
 		BF6E9B89242BE0D100A67091 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF6E9B88242BE0D100A67091 /* Preview Assets.xcassets */; };
 		BF6E9B8C242BE0D100A67091 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF6E9B8A242BE0D100A67091 /* LaunchScreen.storyboard */; };
@@ -40,7 +40,7 @@
 		BF6E9B7C242BE0CE00A67091 /* PinyinXuexi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PinyinXuexi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF6E9B7F242BE0CE00A67091 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BF6E9B81242BE0CE00A67091 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		BF6E9B83242BE0CE00A67091 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		BF6E9B83242BE0CE00A67091 /* PinyinView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinyinView.swift; sourceTree = "<group>"; };
 		BF6E9B85242BE0D100A67091 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BF6E9B88242BE0D100A67091 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BF6E9B8B242BE0D100A67091 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -105,7 +105,7 @@
 			children = (
 				BF6E9B7F242BE0CE00A67091 /* AppDelegate.swift */,
 				BF6E9B81242BE0CE00A67091 /* SceneDelegate.swift */,
-				BF6E9B83242BE0CE00A67091 /* ContentView.swift */,
+				BF87F735243A298B002E9216 /* View */,
 				BF94ECF6242D2009007DEBFC /* Data */,
 				BF6E9B85242BE0D100A67091 /* Assets.xcassets */,
 				BF6E9B8A242BE0D100A67091 /* LaunchScreen.storyboard */,
@@ -140,6 +140,22 @@
 				BF6E9BA3242BE0D100A67091 /* Info.plist */,
 			);
 			path = PinyinXuexiUITests;
+			sourceTree = "<group>";
+		};
+		BF7EA634243B6C51001B82A3 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				BF6E9B83242BE0CE00A67091 /* PinyinView.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		BF87F735243A298B002E9216 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BF7EA634243B6C51001B82A3 /* Common */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		BF94ECF6242D2009007DEBFC /* Data */ = {
@@ -292,7 +308,7 @@
 				BF6E9B80242BE0CE00A67091 /* AppDelegate.swift in Sources */,
 				BF94ECF5242D1F44007DEBFC /* Pinyin.swift in Sources */,
 				BF6E9B82242BE0CE00A67091 /* SceneDelegate.swift in Sources */,
-				BF6E9B84242BE0CE00A67091 /* ContentView.swift in Sources */,
+				BF6E9B84242BE0CE00A67091 /* PinyinView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

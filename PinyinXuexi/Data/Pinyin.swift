@@ -60,3 +60,17 @@ extension Pinyin.Tone {
     }
     
 }
+
+extension Pinyin: CustomStringConvertible {
+    
+    var description: String {
+        switch self {
+        case .initial(let initial):
+            return "\(initial)"
+            
+        case .final(let final):
+            return "\(final)"
+        }
+    }
+    
+}
